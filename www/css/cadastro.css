@@ -1,0 +1,46 @@
+body{
+    margin: 0;
+}
+
+main{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    font-family: Calibri, Arial;
+}
+
+h2{
+    text-align: center;
+    margin: 0;
+}
+
+p{
+    margin: 4px;
+}
+
+button{
+    box-sizing: border-box;
+    width: 100px;
+    padding: 5px 10px;
+    margin: 15px 0;
+}
+
+input[type="text"]{
+    box-sizing: border-box;
+    outline: none;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.box{
+    box-sizing: border-box;
+    padding: 0 30px;
+}
+
+.button-box{
+    display: flex;
+    justify-content: center;
+}
