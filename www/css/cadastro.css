@@ -18,12 +18,11 @@ h2{
 }
 
 p{
-    margin: 4px;
+    margin: 0px;
 }
 
 button{
     box-sizing: border-box;
-    width: 100px;
     padding: 5px 10px;
     margin: 15px 0;
 }

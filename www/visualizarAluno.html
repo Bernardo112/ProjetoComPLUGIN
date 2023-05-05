@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="./css/cadastro.css">
     <script src="components/loader.js"></script>
     <script src="components/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="components/css/bootstrap.min.css">
@@ -12,7 +11,7 @@
 </head>
 <body>
     <header>
-        <nav class="navbar position-fixed vw-100 navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">Codigo Barras</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -21,10 +20,10 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="./cadastro.html">Cadastrar aluno</a>
+                        <a class="nav-link" aria-current="page" href="./cadastro.html">Cadastrar aluno</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./visualizarAluno.html">Visualizar aluno</a>
+                        <a class="nav-link active" aria-current="page" href="./visualizarAluno.html">Visualizar aluno</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Retirar aula</a>
@@ -33,25 +32,44 @@
                         <a class="nav-link" href="#">Cadastrar aula</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="./menu.html">Presença aluno</a>
+                        <a class="nav-link" href="./menu.html">Presença aluno</a>
                     </li>
                 </div>
             </div>
         </nav>
     </header>
-    <main>
-        <h2>Cadastro</h2>
-        <div class="box">
-            <p>Nome</p>
-            <input type="text">
-            <p>Turma</p>
-            <input type="text">
-            <p>Idade</p>
-            <input type="text">
-            <div class="button-box">
-                <button>Cadastrar</button>
-            </div>
-        </div>
+    <main class="vh-100 flex align-items-center">
+        <section>
+            <h2 class="display-4">
+                Lista de Presença
+            </h2>
+        </section>
+        <section>
+            <table class="table table-striped m-0">
+                <tr>
+                    <td class="table-light">Aluno</td>
+                    <td class="table-light">Data</td>
+                    <td class="table-success text-center">
+                        <input type="checkbox">
+                    </td>
+                    <td class="table-danger text-center">
+                        <input type="checkbox">
+                    </td>
+                </tr>
+            </table>
+            <table class="table table-striped m-0">
+                <tr>
+                    <td class="table-light">Aluno</td>
+                    <td class="table-light">Data</td>
+                    <td class="table-success text-center">
+                        <input type="checkbox">
+                    </td>
+                    <td class="table-danger text-center">
+                        <input type="checkbox">
+                    </td>
+                </tr>
+            </table>
+        </section>
     </main>
 </body>
 </html>
