@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/aula.css">
     <script src="components/loader.js"></script>
     <script src="components/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="components/css/bootstrap.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
 </head>
 <body>
     <header>
@@ -29,21 +30,31 @@
                         <a class="nav-link" href="./retiraraula.html">Retirar aula</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./cadastraraula.html">Cadastrar aula</a>
+                        <a class="nav-link active" aria-current="page" href="#">Cadastrar aula</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="./menu.html">Presença aluno</a>
+                        <a class="nav-link" href="./menu.html">Presença aluno</a>
                     </li>
                 </div>
             </div>
         </nav>
     </header>
     <main>
-        <div class="d-flex align-items-center vh-100" onclick="abrirCamera()">
-            <h2>Aponte para o Codigo de barras</h2>
-            <img class="w-50" src="./assets/Camera-Transparent-File.png" alt="Camera-Transparent-File">
-        </div>
-    </main>
-    <script src="./components/camera.js"></script>
+<h2>Cadastrar Aula</h2>
+<div class="box">
+    <label>Matéria:</label>
+    <input type="text" id="materia"/>
+    <label>Professor:</label>
+    <input type="text" id="professor"/>
+    <label>Horario de Inicio</label>
+    <input type="time" id="horainicio"/>
+    <label>Horario de Termino</label>
+    <input type="time" id="horatermino"/>
+
+    <div class="button-box">
+        <button>Cadastrar</button>
+    </div>
+    </div>
+</main>
 </body>
 </html>
