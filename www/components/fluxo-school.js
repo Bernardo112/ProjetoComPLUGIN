@@ -2,13 +2,17 @@
 const abrirCamera = () =>{
     cordova.plugins.barcodeScanner.scan(
         (result) =>{
-            let alunos = ["WELLYNGTON", "MICHAEL", "ANA", "RYAN", "THAMIRES"];
+            let escola = JSON.parse(localStorage.getItem('boletim_aulas')) || {};
             
-            for(let i = 0; i < alunos.length; i++){
-                if(result.text == alunos[i]){
-                    document.getElementById("aqui").textContent = result.text;
+            for(let i = 0; i < escola.aulas[0][1].length; i++){
+                if(escola.aulas[0][1][i].nome == result.text){
+                    escola.aulas[0][1][i].presenca = true;
                 }
             }
+
+            escola = JSON.stringify(escola);
+
+            localStorage.setItem('boletim_aulas', escola);
         },
         (error) =>{
             alert("Erro: " + error);
