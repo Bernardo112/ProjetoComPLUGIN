@@ -35,23 +35,26 @@
 
     </header>
     <main>
-      <h2>Cadastrar Aula</h2>
-      <div class="box">
-          <label>Nome Aula:</label>
-          <input type="text" id="nomeAula"/>
-          <label>Matéria:</label>
-          <input type="text" id="materia"/>
-          <label>Professor:</label>
-          <input type="text" id="professor"/>
-          <label>Horario de Inicio</label>
-          <input type="time" id="horainicio"/>
-          <label>Horario de Termino</label>
-          <input type="time" id="horatermino"/>
-
-          <div class="button-box">
-              <button onclick="inserirAula()">Cadastrar</button>
-          </div>
-      </div>
+        <div>
+            <h1 style="=text-align: center">Login</h1>
+        </div>
+       <form class="box">
+            <div class="mb-3">
+                <label class="form-label">Nome da Aula:</label>
+                <div class="input-group">
+                    <input type="text" class="form-control" id="nomeAula" aria-describedby="basic-addon3 basic-addon4">
+                </div>
+                <br>
+                <label class="form-label">Professor:</label>
+                <div class="input-group">
+                    <input type="text" class="form-control" id="professor" aria-describedby="basic-addon3 basic-addon4">
+                </div>
+                <br><br>
+                <div class="d-grid">
+                    <a class="btn btn-outline-dark" role="button" aria-disabled="true" href="./aulas.html" onclick="inserirAula()">Cadastrar</a>
+                </div>
+            </div>
+        </form>
     </main>
 
     <script src="./components/fluxo-school.js"></script>

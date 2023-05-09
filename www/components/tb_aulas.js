@@ -6,9 +6,9 @@ const visualizarAula = () =>{
     for(let i = 0; i < escola.aulas.length; i++){
         aula += `
             <tr>
-                <td class="table-light ">${escola.aulas[i][0]}</td>
+                <td class="table-light ">${escola.aulas[i][0][0]}</td>
                 <td class="text-center">
-                    <input type="checkbox">
+                    ${escola.aulas[i][0][1]}
                 </td>
             </tr>
         `

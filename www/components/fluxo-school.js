@@ -30,7 +30,7 @@ const inserirAula = () =>{
 
     const aula = [
         // nome da aula
-        document.getElementById("nomeAula").value , []
+        [document.getElementById("nomeAula").value, document.getElementById("professor").value], []
     ];
 
     escola.aulas.push(aula);

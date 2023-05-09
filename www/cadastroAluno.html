@@ -35,18 +35,26 @@
 
     </header>
     <main>
-        <h2>Cadastro</h2>
-        <div class="box">
-            <p>Nome</p>
-            <input type="text" id="nomealuno">
-            <p>Turma</p>
-            <input type="text">
-            <p>Idade</p>
-            <input type="text">
-            <div class="button-box">
-                <button onclick="adicionarAluno()">Cadastrar</button>
-            </div>
+         <div>
+            <h1 style="=text-align: center">Cadastrar Aluno</h1>
         </div>
+        <form class="box">
+            <div class="mb-3">
+                <label class="form-label">Nome:</label>
+                <div class="input-group">
+                    <input type="text" class="form-control" id="nomealuno" aria-describedby="basic-addon3 basic-addon4">
+                </div>
+                <br>
+                <label class="form-label">Idade:</label>
+                <div class="input-group">
+                    <input type="text" class="form-control" id="professor" aria-describedby="basic-addon3 basic-addon4">
+                </div>
+                <br><br>
+                <div class="d-grid">
+                    <a class="btn btn-outline-dark" role="button" aria-disabled="true" href="./alunos.html" onclick="adicionarAluno()">Cadastrar</a>
+                </div>
+            </div>
+        </form>
     </main>
 
     <script src="./components/fluxo-school.js"></script>p

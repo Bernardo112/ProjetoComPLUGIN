@@ -9,12 +9,7 @@ const visualizarAluno = () =>{
                 <tr>
                     <td class="table-light">${escola.aulas[0][1][i].nome}</td>
                     <td class="table-light">${escola.aulas[0][1][i].data}</td>
-                    <td class="table-success text-center">
-                        <input type="checkbox">
-                    </td>
-                    <td class="table-danger text-center">
-                        <input type="checkbox">
-                    </td>
+                    <td class="table-light">${escola.aulas[0][1][i].presenca}</td>
                 </tr>
             </table>
         `
