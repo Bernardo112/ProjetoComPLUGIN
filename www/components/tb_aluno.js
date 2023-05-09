@@ -26,3 +26,5 @@ const visualizarAluno = () =>{
 
     localStorage.setItem('boletim_aulas', escola);
 }
+
+visualizarAluno();

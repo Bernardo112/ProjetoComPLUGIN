@@ -35,24 +35,27 @@
 
     </header>
     <main>
-<h2>Cadastrar Aula</h2>
-<div class="box">
-    <label>Matéria:</label>
-    <input type="text" id="materia"/>
-    <label>Professor:</label>
-    <input type="text" id="professor"/>
-    <label>Horario de Inicio</label>
-    <input type="time" id="horainicio"/>
-    <label>Horario de Termino</label>
-    <input type="time" id="horatermino"/>
+      <h2>Cadastrar Aula</h2>
+      <div class="box">
+          <label>Nome Aula:</label>
+          <input type="text" id="nomeAula"/>
+          <label>Matéria:</label>
+          <input type="text" id="materia"/>
+          <label>Professor:</label>
+          <input type="text" id="professor"/>
+          <label>Horario de Inicio</label>
+          <input type="time" id="horainicio"/>
+          <label>Horario de Termino</label>
+          <input type="time" id="horatermino"/>
 
-    <div class="button-box">
-        <button>Cadastrar</button>
-    </div>
-    </div>
-</main>
+          <div class="button-box">
+              <button onclick="inserirAula()">Cadastrar</button>
+          </div>
+      </div>
+    </main>
 
-<script src="./components/main.js"></script>
-<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script src="./components/fluxo-school.js"></script>
+    <script src="./components/main.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 </body>
 </html>

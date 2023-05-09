@@ -25,7 +25,8 @@ const inserirAula = () =>{
     }
 
     const aula = [
-        "Nome da Aula", []
+        // nome da aula
+        document.getElementById("nomeAula").value , []
     ];
 
     escola.aulas.push(aula);
@@ -40,7 +41,7 @@ const adicionarAluno = () =>{
     let escola = JSON.parse(localStorage.getItem('boletim_aulas')) || {};
 
     const meualuno = {
-        nome: "luan",
+        nome: document.getElementById("nomealuno").value,
         presenca: false,
         data: "dwadwa"
     }
@@ -71,19 +72,6 @@ const darPresenca = () =>{
         if(escola.aulas[0][1][i].nome == meualuno){
             escola.aulas[0][1][i].presenca = true;
         }
-    }
-
-    escola = JSON.stringify(escola);
-
-    localStorage.setItem('boletim_aulas', escola);
-}
-
-// mostra alunos
-const visualizarAluno = () =>{
-    let escola = JSON.parse(localStorage.getItem('boletim_aulas')) || {};
-
-    for(let i = 0; i < escola.aulas[0][1].length; i++){
-        console.log(escola.aulas[0][1][i].nome);
     }
 
     escola = JSON.stringify(escola);
